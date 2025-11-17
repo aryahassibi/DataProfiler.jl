@@ -1,6 +1,6 @@
 <!-- Banner (optional) -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/aryahassibi/DataProfiler.jl/main/docs/src/assets/banner.png" alt="DataProfiler.jl banner" width="600">
+  <img src="https://raw.githubusercontent.com/aryahassibi/DataProfiler.jl/main/docs/src/assets/banner.png" alt="DataProfiler.jl banner">
 </p>
 
 <h1 align="center">DataProfiler.jl</h1>
