@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    # Ensure CI runs on any PR
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: '1' 
+          # To use the latest Julia 1.x version
+
+      - name: Install dependencies
+        run: julia -e 'using Pkg; Pkg.instantiate()'
+
+      - name: Run tests
+        run: julia -e 'using Pkg; Pkg.test()'
