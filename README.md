@@ -17,12 +17,9 @@
     -->
 </p>
 
----
 
 ## Overview
 **DataProfiler.jl** provides a One-command, human-friendly DataFrame profiler in Julia. Read the full documentation and examples by opening `docs/build/index.html` file in a browser.
-
-
 
 It is simply tedious to write the same handful of lines every time you pick up a new dataset—compute summaries, check missingness, inspect distributions, make a few quick plots—all just to get oriented. DataProfiler.jl automates the repetitive early steps in data exploration and helps you focus on the real analysis instead.
 
@@ -44,8 +41,6 @@ Or, equivalently, via the `Pkg` API:
 ```julia
 julia> import Pkg; Pkg.add("https://github.com/aryahassibi/DataProfiler.jl")
 ```
-
-
 
 DataProfiler.jl supports Julia 1.10 and later.
 
@@ -75,20 +70,16 @@ save_report(report, "report.md")
  Run `pkg> test` inside the project to verify everything after making changes.
 
 > [!WARNING]
-> PNG histograms work with CairoMakie; PNG boxplots need StatsMakie (which may not resolve on Julia 1.11)
+> PNG boxplots need StatsMakie (which may not resolve on Julia 1.11)
 
 ---
 
 ## Features
-
-
 - **Data diagnostics:** missingness overview, duplicate detection, semantic hints for ID/date/categorical columns  
 - **Numeric analysis:** summary statistics, quantiles, skewness/kurtosis, MAD/IQR outlier detection  
 - **Visual summaries:** ASCII histograms and boxplots via UnicodePlots; optional PNG plots via CairoMakie  
 - **Non-destructive design:** never mutates input DataFrames; sampling avoids expensive per-column work  
 - **Headless-friendly:** plotting and summaries work in scripts, terminals, and CI environments
-
-
 
 ---
 
@@ -116,7 +107,6 @@ julia> ] test
 ```bash
 julia --project=docs docs/make.jl
 ```
-
 
 ---
 
