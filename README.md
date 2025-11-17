@@ -19,7 +19,7 @@
 
 
 ## Overview
-**DataProfiler.jl** provides a One-command, human-friendly DataFrame profiler in Julia. Read the full documentation and examples by opening `docs/build/index.html` file in a browser.
+**DataProfiler.jl** provides a One-command, human-friendly DataFrame profiler in Julia.
 
 It is simply tedious to write the same handful of lines every time you pick up a new dataset—compute summaries, check missingness, inspect distributions, make a few quick plots—all just to get oriented. DataProfiler.jl automates the repetitive early steps in data exploration and helps you focus on the real analysis instead.
 
